@@ -20,5 +20,8 @@ jobs:
         generate_release_notes: true
         draft: false
         prerelease: false
+        files: |
+          build/artifact1.zip
+          build/artifact2.tar.gz
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN}}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
